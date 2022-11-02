@@ -1,0 +1,53 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  max-height: 100vh;
+  height: 100vh;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 250px;
+    min-height: 420px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    flex-direction: column;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 0;
+    }
+    h3 {
+      line-height: 1.2;
+      color: var(--dark-blue);
+      font-size: 19px;
+      padding: 0 10px;
+    }
+    p {
+      padding: 20px;
+      padding-top: 0;
+      font-size: 15px;
+      line-height: 1.2;
+      color: var(--grayish-blue);
+    }
+  }
+}
